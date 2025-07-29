@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Norwegian Cruise Line Experience</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    :root {
+      --ncl-blue: #0784BD;
+      --ncl-white: #FFFFFF;
+      --ncl-black: #000000;
+      --ncl-gray: #F8F8F8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: var(--ncl-black);
+      background: var(--ncl-white);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--ncl-blue);
+      color: var(--ncl-white);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img { max-height: 50px; }
+    header .header-cta a {
+      background: var(--ncl-white);
+      color: var(--ncl-blue);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .hero {
+      max-width: 800px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .hero video {
+      width: 100%;
+      max-height: 450px;
+      border-radius: 8px;
+    }
+    .features {
+      display: grid;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .feature {
+      text-align: center;
+      padding: 1rem;
+      background: var(--ncl-gray);
+      border-radius: 8px;
+    }
+    .feature i {
+      font-size: 2rem;
+      color: var(--ncl-blue);
+      margin-bottom: 0.5rem;
+    }
+    .cta-main {
+      text-align: center;
+      margin: 2rem;
+    }
+    .cta-main a {
+      background: var(--ncl-blue);
+      color: var(--ncl-white);
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      background: var(--ncl-gray);
+    }
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header .header-cta {
+        margin-top: 1rem;
+      }
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://www.ncl.com/assets/v1/images/logos/logo-ncl-black.svg" alt="Norwegian Cruise Line">
+    <div class="header-cta">
+      <a href="https://www.ncl.com/in/en/cruise-deals">Book Now</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video autoplay controls>
+      <source src="NorwegianCruise.mp4" type="video/mp4">
+      Your browser doesn't support the video tag.
+    </video>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <i class="fa-solid fa-water"></i>
+      <h3>Thrill Rides</h3>
+      <p>Aqua SlideCoaster waterslide rollercoaster and Aqua Parks.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-gamepad"></i>
+      <h3>Glow Court & VR</h3>
+      <p>Immersive games and digital sports experiences on deck.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-spa"></i>
+      <h3>Mandara Spa</h3>
+      <p>Relaxing treatments and wellness services.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-utensils"></i>
+      <h3>Food & Dining</h3>
+      <p>Indulge Food Hall, specialty and plant‑based venues like Planterie.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-star"></i>
+      <h3>The Haven</h3>
+      <p>Exclusive suites, private lounge, butler service.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-music"></i>
+      <h3>Live Entertainment</h3>
+      <p>Broadway-style shows, comedy nights & live music.</p>
+    </div>
+  </section>
+
+  <section class="cta-main">
+    <a href="https://www.ncl.com/in/en/cruise-deals">Book Your Cruise Now</a>
+  </section>
+
+  <footer>
+    NCL Global | © 2025 Norwegian Cruise Line<br>
+    Experience MORE At Sea™
+  </footer>
+
+  <script>
+    // Optional JS: add smooth scroll or analytics
+  </script>
+</body>
+</html>
